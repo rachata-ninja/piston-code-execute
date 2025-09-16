@@ -56,7 +56,7 @@ const options = {
     },
     output_max_size: {
         desc: 'Max size of each stdio buffer',
-        default: 1024,
+        default: 4096,
         parser: parse_int,
         validators: [(x, raw) => !is_nan(x) || `${raw} is not a number`],
     },
@@ -68,7 +68,7 @@ const options = {
     },
     max_open_files: {
         desc: 'Max number of open files per job',
-        default: 2048,
+        default: 4096,
         parser: parse_int,
         validators: [(x, raw) => !is_nan(x) || `${raw} is not a number`],
     },

@@ -464,13 +464,13 @@ Piston uses Isolate which makes use of Linux namespaces, chroot, multiple unpriv
 
 -   Disabling outgoing network interaction by default
 -   Capping max processes at 256 by default (resists `:(){ :|: &}:;`, `while True: os.fork()`, etc.)
--   Capping max files at 2048 (resists various file based attacks)
+-   Capping max files at 4096 (resists various file based attacks)
 -   Cleaning up all temp space after each execution (resists out of drive space attacks)
 -   Running each submission as a different unprivileged user
 -   Running each submission with its own isolated Linux namespaces
 -   Capping runtime execution at 3 seconds by default (CPU-time and wall-time)
 -   Capping the peak memory that all the submission's processes can use
--   Capping stdout to 1024 characters by default (resists yes/no bombs and runaway output)
+-   Capping stdout to 4096 characters by default (resists yes/no bombs and runaway output)
 -   SIGKILLing misbehaving code
 
 <br>

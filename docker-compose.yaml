@@ -10,5 +10,6 @@ services:
             - 2000:2000
         volumes:
             - ./data/piston/packages:/piston/packages
+            - ./api/src/config.js:/piston_api/src/config.js
         tmpfs:
             - /tmp:exec

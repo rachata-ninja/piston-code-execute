@@ -94,7 +94,7 @@ Resists against exhausting the process table, causing a full system lockup.
 
 ```yaml
 key: PISTON_OUTPUT_MAX_SIZE
-default: 1024
+default: 4096
 ```
 
 Maximum size of stdio buffers for each job.
