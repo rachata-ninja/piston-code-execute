@@ -313,7 +313,7 @@ class Job {
             stderr,
             code,
             signal: ['TO', 'OL', 'EL'].includes(status) ? 'SIGKILL' : signal,
-            output,
+            // output,
             memory,
             message,
             status,

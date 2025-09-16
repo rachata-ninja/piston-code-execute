@@ -11,5 +11,6 @@ services:
         volumes:
             - ./data/piston/packages:/piston/packages
             - ./api/src/config.js:/piston_api/src/config.js
+            - ./api/src/job.js:/piston_api/src/job.js
         tmpfs:
             - /tmp:exec
